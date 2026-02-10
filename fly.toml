@@ -1,17 +1,10 @@
-# fly.toml app configuration file generated for przyciagnieci-0d6msg on 2026-02-10T04:49:13Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'przyciagnieci-0d6msg'
-primary_region = 'ams'
+app = "przyciagnieci-0d6msg"
+primary_region = "ams"
 
 [build]
-  context = "przyciagnieci"
-  dockerfile = "Dockerfile"
+dockerfile = "Dockerfile"
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 256
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 256
