@@ -1,9 +1,0 @@
-app = "przyciagnieci-bot"
-
-primary_region = "ams"
-
-[build]
-  dockerfile = "Dockerfile"
-
-[processes]
-  przyciagnieci = "python przyciagnieci.py"
