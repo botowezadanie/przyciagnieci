@@ -9,7 +9,7 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
-TOKEN = os.getenv ("BOT_TOKEN")
+TOKEN = os.getenv ("TELEGRAM_TOKEN")
 
 PORTAL_1_URL = "https://direct-promo.pro/a/6RXMfGjyzHpzB1"
 PORTAL_2_URL = "https://safeoffers.pro/a/gLZyiYRXWH2wxq"
@@ -180,4 +180,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
