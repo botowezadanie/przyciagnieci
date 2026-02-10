@@ -2,10 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir python-telegram-bot==20.7
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# jawnie kopiujemy KONKRETNE pliki
-COPY przyciagnieci.py /app/przyciagnieci.py
-COPY przyciagnieci.png /app/przyciagnieci.png
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "/app/przyciagnieci.py"]
+COPY . .
+
+CMD ["python", "przyciagnieci.py"]
