@@ -1,4 +1,5 @@
 import random
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
@@ -8,8 +9,7 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
-
-TOKEN = "8235537510:AAGkFC10Smdpcssuf1O0ZKFciCabcxnVy4g"
+TOKEN = os.getenv ("BOT_TOKEN")
 
 PORTAL_1_URL = "https://direct-promo.pro/a/6RXMfGjyzHpzB1"
 PORTAL_2_URL = "https://safeoffers.pro/a/gLZyiYRXWH2wxq"
@@ -180,3 +180,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
