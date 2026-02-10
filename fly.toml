@@ -1,4 +1,4 @@
-app = "przyciagnieci-0d6msg"
+app = "przyciagnieci"
 primary_region = "ams"
 
 [build]
